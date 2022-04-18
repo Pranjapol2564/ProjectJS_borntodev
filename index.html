@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculation System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="grade">
+            <div class="head"><h1>Grade Calculation System</h1></div>
+            <label>English</label> <input type="text" class="box1" id="eng"> <br>
+            <label>Software Engineering</label> <input type="text" class="box2" id="soft"> <br>
+            <label>JavaScript</label> <input type="text" class="box3" id="java">  <br>
+            <label>System Analysis</label> <input type="text" class="box4" id="system"> <br>
+            <label>Design Thinking</label> <input type="text" class="box5" id="design"> <br>
+        <br>
+        </div>
+        
+        <button class="btn1" onclick="Total()" >Total</button>
+        <button class="btn2" onclick="Average()">Average</button>
+        <button class="btn3" onclick="Gpa()">Gpa</button>
+        
+    </div>
+
+    <div class="result">
+        <div class="head1"><h1>Total</h1></div>
+        <div id="total"></div>
+
+        <div class="head2"><h1>Average</h1></div>
+        <div id="avg"></div>
+
+        <div class="head3"><h1>Gpa</h1></div>
+        <div id="gpa"></div>
+    </div>
+
+    <script src = "/app.js"></script>
+</body>
+</html>
